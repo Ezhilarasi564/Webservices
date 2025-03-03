@@ -13,12 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $department = trim($_POST['department']);
     $year = trim($_POST['year']);
     $event = trim($_POST['event']);
-    $comments = trim($_POST['comments']);
-
-    $n1 = 78;
-    $n2 = 2;
-
-    $n3 = $n1+$n2;
+    $comments = trim($_POST['comments']);
 
     $errors = [];
 
@@ -69,7 +64,7 @@ echo "<a href='index.html'>Go Back</a>";
         echo "<p>Department: $department</p>";
         echo "<p>Year: $year</p>";
         echo "<p>Event: $event</p>";
-        echo "<p>Comments: $n3</p>";
+        echo "<p>Comments: $comments</p>";
         
         
         
